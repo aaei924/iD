@@ -38,6 +38,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 # unreleased (v2.36.0-dev)
 
 #### :sparkles: Usability & Accessibility
+* Allow coastlines and roads with long bus routes to be split ([#10615], thanks [@k-yle])
 * The flip operation now works on nodes with no `direction` tag, to support quickly adding `direction` to features like traffic signs ([#9317], thanks [@k-yle])
 * Show "add new key" placeholder text for blank row in raw tag editor ([#11211], thanks [@bhavyaKhatri2703])
 #### :scissors: Operations
@@ -56,6 +57,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#9317]: https://github.com/openstreetmap/iD/issues/9317
 [#9511]: https://github.com/openstreetmap/iD/pull/9511
 [#9754]: https://github.com/openstreetmap/iD/issues/9754
+[#10615]: https://github.com/openstreetmap/iD/pull/10615
 [#11206]: https://github.com/openstreetmap/iD/issues/11206
 [#11211]: https://github.com/openstreetmap/iD/issues/11211
 [@bhavyaKhatri2703]: https://github.com/bhavyaKhatri2703

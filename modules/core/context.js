@@ -421,6 +421,7 @@ export function coreContext() {
 
   /* Container */
   let _container = d3_select(null);
+  /** @type {GetSet<typeof context, typeof _container>} */
   context.container = function(val) {
     if (!arguments.length) return _container;
     _container = val;
