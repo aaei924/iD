@@ -187,8 +187,12 @@ export function utilGetAllNodes(ids, graph) {
  *                              it being shown twice (see PR #8707#discussion_r712658175)
  */
 export function utilDisplayName(entity, hideNetwork) {
-    var localizedNameKey = 'name:' + localizer.languageCode().toLowerCase();
-    var name = entity.tags[localizedNameKey] || entity.tags.name || '';
+    const name = (
+        entity.tags[`name:${localizer.localeCode()}`] || // e.g. name:es-CO
+        entity.tags[`name:${localizer.languageCode().toLowerCase()}`] || // e.g. name:es
+        entity.tags.name ||
+        ''
+    );
 
     var tags = {
         addr: entity.tags['addr:housenumber'] || entity.tags['addr:housename'],
@@ -242,7 +246,7 @@ export function utilDisplayName(entity, hideNetwork) {
     }
 
     if (keyComponents.length) {
-        name = t('inspector.display_name.' + keyComponents.join('_'), tags);
+        return t('inspector.display_name.' + keyComponents.join('_'), tags);
     }
 
     return name;

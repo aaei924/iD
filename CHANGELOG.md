@@ -47,6 +47,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Fix flickering of imagery metadata information in background panel ([#9754])
 * Immediately update raw tag key/value inputs when spaces have been trimmed ([#11206])
 #### :earth_asia: Localization
+* Consider `name:*` tags with the full locale code when labelling features, such as `name:pt-BR` ([#10911], thanks [@k-yle])
 #### :hourglass: Performance
 #### :rocket: Presets
 * Support more complex logic to define preset fields that are conditionally hidden ([#9511], thanks [@k-yle])
@@ -56,6 +57,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#9317]: https://github.com/openstreetmap/iD/issues/9317
 [#9511]: https://github.com/openstreetmap/iD/pull/9511
 [#9754]: https://github.com/openstreetmap/iD/issues/9754
+[#10911]: https://github.com/openstreetmap/iD/pull/10911
 [#11206]: https://github.com/openstreetmap/iD/issues/11206
 [#11211]: https://github.com/openstreetmap/iD/issues/11211
 [@bhavyaKhatri2703]: https://github.com/bhavyaKhatri2703
